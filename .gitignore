@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# env (local secrets — never commit)
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# debug
+npm-debug.log*
