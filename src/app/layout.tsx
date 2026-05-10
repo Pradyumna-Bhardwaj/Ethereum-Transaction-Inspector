@@ -13,9 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EthScope — Ethereum Transaction Inspector",
+  title: {
+    default: "EthScope",
+    template: "%s · EthScope",
+  },
   description:
     "Decode Ethereum transactions: calldata, event logs, gas, and ERC-20 transfers with viem.",
+  applicationName: "EthScope",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
